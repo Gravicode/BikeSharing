@@ -18,7 +18,7 @@ namespace BikeSharing.BikeSimulator
         static int TimerCountdown;
         static string DeviceName = "KayuhBike1";
         static TripInfo Info;
-        static Task CountDownTask;
+        static Action CountDownTask;
         static void Main(string[] args)
         {
             Console.WriteLine("Device is up!");
@@ -28,7 +28,7 @@ namespace BikeSharing.BikeSimulator
             Console.ReadLine();
         }
 
-        static Task CountDown()
+        static void CountDown()
         {
             while (true)
             {
@@ -44,6 +44,7 @@ namespace BikeSharing.BikeSimulator
                     Console.WriteLine("Time is up, please return this bike to station..");
                 }
                 Thread.Sleep(1000);
+                if (Info != null && !Info.IsActive) break;
             }
         }
         static Task StartTimer()
@@ -129,6 +130,10 @@ namespace BikeSharing.BikeSimulator
                             Console.WriteLine("Bike is already started / unlocked");
                             break;
                         }
+                        else
+                        {
+                            Console.WriteLine("Bike is unlocked/started");
+                        }
                         TimerCountdown = 30*60;
                         Info = new TripInfo();
                         Info.TripNumber = action.Params[0];
@@ -137,9 +142,9 @@ namespace BikeSharing.BikeSimulator
                         Info.EndDate = DateTime.Now;
                         Info.DeviceName = DeviceName;
                         Info.IsActive = true;
-                        CountDownTask = CountDown();
-                        CountDownTask.Start();
-                        Console.WriteLine("Bike is unlocked/started");
+                        CountDownTask = new Action(CountDown); 
+                        CountDownTask.Invoke();
+                        
                         break;
                     case "Stop":
                         //lock
@@ -151,9 +156,14 @@ namespace BikeSharing.BikeSimulator
                             SendDeviceToCloudMessagesAsync(item);
                             if(CountDownTask != null)
                             {
-                                CountDownTask.Dispose();
+                               //do nothing
                             }
                             Console.WriteLine("Bike is stopped/locked");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Bike is already stopped/locked");
+
                         }
                         break;
                     case "SOS":
