@@ -9,7 +9,7 @@ using System.Configuration;
 using System.Globalization;
 using System.Net.Sockets;
 
-namespace Artos.Tools
+namespace BikeSharing.Tools
 {
     /// <summary>
     /// Form Validation Class

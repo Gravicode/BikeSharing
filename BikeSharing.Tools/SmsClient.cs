@@ -6,7 +6,7 @@ using System.Xml.Linq;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Artos.Tools
+namespace BikeSharing.Tools
 {
     public class SmsClient
     {

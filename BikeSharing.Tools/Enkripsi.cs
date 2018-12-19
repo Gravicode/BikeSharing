@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Artos.Tools
+namespace BikeSharing.Tools
 {
     public class Enkripsi
     {
