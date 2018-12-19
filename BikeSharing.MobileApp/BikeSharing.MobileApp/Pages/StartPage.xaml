@@ -4,13 +4,31 @@
              x:Class="BikeSharing.MobileApp.Pages.StartPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="BIKE SHARING SAMPLE 0.1"
-                HorizontalOptions="CenterAndExpand" />
-            <Label HorizontalOptions="CenterAndExpand" Text="00:00:00" x:Name="TxtTimer"></Label>
-            <Entry Text="Asep" x:Name="TxtUserName" ></Entry>
-            <Button HorizontalOptions="CenterAndExpand" Text="Start Bike" x:Name="BtnStart"></Button>
-            <Button HorizontalOptions="CenterAndExpand" Text="Stop Bike" x:Name="BtnStop"></Button>
-            <Button HorizontalOptions="CenterAndExpand" Text="SOS" x:Name="BtnSOS"></Button>
+            <StackLayout HeightRequest="100" BackgroundColor="#35a808" >
+                <Label Text="BIKE SHARING SAMPLE 0.1" TextColor="White" FontSize="Large" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Time"></Label>
+                <Label HorizontalOptions="CenterAndExpand" Text="00:00:00" FontSize="Medium" TextColor="Red" x:Name="TxtTimer"></Label>
+            </StackLayout>
+            <StackLayout Margin="0, 10, 0, 10">
+                <Entry Text="Asep" x:Name="TxtUserName" 
+                       VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                       WidthRequest="200" HorizontalTextAlignment="Center"></Entry>
+                <Button HorizontalOptions="CenterAndExpand" Text="Start Bike" x:Name="BtnStart" 
+                    BackgroundColor="#e3e9f2" BorderRadius="10"
+                    TextColor="#2bdb13" FontAttributes="Bold" FontSize="Large" 
+                    WidthRequest="150"></Button>
+                <Button HorizontalOptions="CenterAndExpand" Text="Stop Bike" x:Name="BtnStop" 
+                    BackgroundColor="#e3e9f2" BorderRadius="10"
+                    TextColor="#61B4BB" FontAttributes="Bold" FontSize="Large"
+                    WidthRequest="150"></Button>
+                <Button HorizontalOptions="CenterAndExpand" Text="SOS" x:Name="BtnSOS"
+                    BackgroundColor="#a50e0e" BorderRadius="100"
+                    TextColor="White" FontAttributes="Bold" FontSize="Large"
+                    WidthRequest="150" 
+                    BorderWidth="200"></Button>
+            </StackLayout>            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
