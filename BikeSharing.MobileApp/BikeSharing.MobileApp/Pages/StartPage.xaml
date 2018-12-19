@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeSharing.MobileApp.Pages.StartPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="BIKE SHARING SAMPLE 0.1"
+                HorizontalOptions="CenterAndExpand" />
+            <Label HorizontalOptions="CenterAndExpand" Text="00:00:00" x:Name="TxtTimer"></Label>
+            <Entry Text="Asep" x:Name="TxtUserName" ></Entry>
+            <Button HorizontalOptions="CenterAndExpand" Text="Start Bike" x:Name="BtnStart"></Button>
+            <Button HorizontalOptions="CenterAndExpand" Text="Stop Bike" x:Name="BtnStop"></Button>
+            <Button HorizontalOptions="CenterAndExpand" Text="SOS" x:Name="BtnSOS"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
