@@ -25,7 +25,7 @@ namespace BikeSharing.MobileApp.Helpers
         public async Task InvokeMethod(string DeviceId, string ActionName = "PlaySound", params string[] Params)
         {
             var methodInvocation = new CloudToDeviceMethod("DoAction") { ResponseTimeout = TimeSpan.FromSeconds(30) };
-            var action = new DeviceAction() { ActionName = ActionName, Params = Params };
+            var action = new DeviceAction() { ActionName = ActionName, Params0 = Params[0] };
             methodInvocation.SetPayloadJson(JsonConvert.SerializeObject(action));
 
             // Invoke the direct method asynchronously and get the response from the simulated device.

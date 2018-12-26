@@ -3,27 +3,35 @@ using System.Collections.Generic;
 
 namespace BikeSharing.Models
 {
-    public class Location
+    public class GpsPoint
     {
+        public DateTime Timestamp { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+        public double SpeedInKnots { get; set; }
+        public double BearingInDegrees { get; set; }
     }
 
     public class DeviceAction
     {
+        public string DeviceName { get; set; }
         public string ActionName { get; set; }
-        public string[] Params { get; set; }
+        public string Params0 { get; set; }
+        public string Params1 { get; set; }
+        public string Params2 { get; set; }
+        public string Params3 { get; set; }
     }
-   public class DeviceData
+    public class DeviceData
     {
         public DeviceData(double latitude,double longitude)
         {
-            this.Position = new Location();
+            this.Position = new GpsPoint();
             this.Position.Latitude = latitude;
             this.Position.Longitude = longitude;
         }
+        public bool IsLocked { get; set; }
         public DateTime TimeStamp { get; set; }
-        public Location Position { get; set; }
+        public GpsPoint Position { get; set; }
         public bool SOS { get; set; }
         public TripInfo Info { get; set; }
     }
@@ -34,7 +42,7 @@ namespace BikeSharing.Models
         public string UserName { get; set; }
         public DateTime TimeStamp { get; set; }
         public string Message { get; set; }
-        public Location Position { get; set; }
+        public GpsPoint Position { get; set; }
     }
     public class Trips
     {
@@ -61,14 +69,14 @@ namespace BikeSharing.Models
     }
     public class Route
     {
-        public Location Position { get; set; }
+        public GpsPoint Position { get; set; }
         public DateTime TimeStamp { get; set; }
     }
 
     public class GeoFenceData
     {
-        public int LocationID { get; set; }
+        public int GpsPointID { get; set; }
         public string Name { get; set; }
-        public List<Location> Points { get; set; }
+        public List<GpsPoint> Points { get; set; }
     }
 }

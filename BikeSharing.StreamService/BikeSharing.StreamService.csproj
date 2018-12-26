@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms.Maps" Version="3.4.0.1008975" />
+  </ItemGroup>
+
 </Project>

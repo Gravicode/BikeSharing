@@ -9,6 +9,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Blazor.Server" Version="0.7.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="3.4.0.1008975" />
   </ItemGroup>
 
   <ItemGroup>

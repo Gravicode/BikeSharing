@@ -10,10 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="M2MqttDotnetCore" Version="1.0.8" />
     <PackageReference Include="Microsoft.Azure.Devices" Version="1.17.1" />
     <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
     <PackageReference Include="shortid" Version="2.0.0" />
-    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
   </ItemGroup>
 

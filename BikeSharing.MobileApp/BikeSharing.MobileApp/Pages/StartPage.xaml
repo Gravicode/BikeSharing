@@ -11,6 +11,7 @@
                 <Label HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="Time"></Label>
                 <Label HorizontalOptions="CenterAndExpand" Text="00:00:00" FontSize="Medium" TextColor="Red" x:Name="TxtTimer"></Label>
             </StackLayout>
+           
             <StackLayout Margin="0, 10, 0, 10">
                 <Entry Text="Asep" x:Name="TxtUserName" 
                        VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"

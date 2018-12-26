@@ -12,6 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Blazor.Browser" Version="0.7.0" />
     <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="0.7.0" PrivateAssets="all" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="3.4.0.1008975" />
   </ItemGroup>
 
 </Project>
