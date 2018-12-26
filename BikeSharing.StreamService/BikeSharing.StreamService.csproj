@@ -6,7 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="M2MqttDotnetCore" Version="1.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="ServiceStack.Redis.Core" Version="5.4.0" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="3.4.0.1008975" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BikeSharing.Models\BikeSharing.Models.csproj" />
   </ItemGroup>
 
 </Project>

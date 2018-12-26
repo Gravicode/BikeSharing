@@ -23,6 +23,7 @@ namespace BikeSharing.Models
     }
     public class DeviceData
     {
+        public long Id { get; set; }
         public DeviceData(double latitude,double longitude)
         {
             this.Position = new GpsPoint();
