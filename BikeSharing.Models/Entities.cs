@@ -1,13 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BikeSharing.Models
 {
-    public class GpsPoint
+    public class Location
+    {
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
+        
+    }
+    public class GpsPoint:Location
     {
         public DateTime Timestamp { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
         public double SpeedInKnots { get; set; }
         public double BearingInDegrees { get; set; }
     }
@@ -23,6 +29,7 @@ namespace BikeSharing.Models
     }
     public class DeviceData
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
         public DeviceData(double latitude,double longitude)
         {
@@ -39,6 +46,8 @@ namespace BikeSharing.Models
 
     public class SoSReport
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
         public string DeviceName { get; set; }
         public string UserName { get; set; }
         public DateTime TimeStamp { get; set; }
@@ -47,8 +56,10 @@ namespace BikeSharing.Models
     }
     public class Trips
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
         public TripInfo Info { get; set; }
-        public List<Route> Routes { get; set; }
+        public List<GpsPoint> Routes { get; set; }
     }
 
     public class TripInfo
@@ -60,24 +71,25 @@ namespace BikeSharing.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }
-    public class UserProfile
+    public class UserProfile:AuditAttribute
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
         public string UserName { get; set; }
         public string Password { set; get; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public string ProfilePictureUrl { get; set; }
+        public bool IsActive { get; set; }
     }
-    public class Route
-    {
-        public GpsPoint Position { get; set; }
-        public DateTime TimeStamp { get; set; }
-    }
+    
 
-    public class GeoFenceData
+    public class GeoFenceData:AuditAttribute
     {
-        public int GpsPointID { get; set; }
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
+        public long Id { get; set; }
         public string Name { get; set; }
-        public List<GpsPoint> Points { get; set; }
+        public List<Location> Points { get; set; }
     }
 }
