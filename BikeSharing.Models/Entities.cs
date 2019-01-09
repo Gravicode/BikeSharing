@@ -99,6 +99,7 @@ namespace BikeSharing.Models
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
+        public long SoSReportId { get; set; }
         public DateTime CreatedDate { get; set; }
         public string UserName { get; set; }
         public string Message { get; set; }
