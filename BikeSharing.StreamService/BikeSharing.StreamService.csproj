@@ -11,12 +11,19 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.4" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
     <PackageReference Include="ServiceStack.Redis.Core" Version="5.4.0" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="3.4.0.1008975" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BikeSharing.Models\BikeSharing.Models.csproj" />
+    <ProjectReference Include="..\BikeSharing.Tools\BikeSharing.Tools.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logics\" />
   </ItemGroup>
 
 </Project>

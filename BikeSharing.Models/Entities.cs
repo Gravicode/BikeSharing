@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BikeSharing.Models
 {
+    #region NOSQL
     public class Location
     {
         public double Longitude { get; set; }
@@ -31,6 +32,10 @@ namespace BikeSharing.Models
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
+        public DeviceData()
+        {
+            this.Position = new GpsPoint();
+        }
         public DeviceData(double latitude,double longitude)
         {
             this.Position = new GpsPoint();
@@ -42,17 +47,6 @@ namespace BikeSharing.Models
         public GpsPoint Position { get; set; }
         public bool SOS { get; set; }
         public TripInfo Info { get; set; }
-    }
-
-    public class SoSReport
-    {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Id { get; set; }
-        public string DeviceName { get; set; }
-        public string UserName { get; set; }
-        public DateTime TimeStamp { get; set; }
-        public string Message { get; set; }
-        public GpsPoint Position { get; set; }
     }
     public class Trips
     {
@@ -71,6 +65,47 @@ namespace BikeSharing.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }
+    #endregion
+
+    #region SQL
+    public enum LogTypes { Error, Info, Other };
+    public class AppLog
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
+        public string LogID { get; set; }
+        public DateTime LogDate { get; set; }
+        public LogTypes LogType { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Source { get; set; }
+
+    }
+    public enum SoSReportType { Reported, InProgress, Responded}
+    public class SoSReport
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
+        public string DeviceName { get; set; }
+        public string UserName { get; set; }
+        public DateTime TimeStamp { get; set; }
+        public string Message { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public SoSReportType Status { get; set; }
+    }
+
+    public class SosReportDetail
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public string UserName { get; set; }
+        public string Message { get; set; }
+        public string AttachmentUrl { get; set; }
+        public string ProfPic { get; set; }
+    }
+
     public class UserProfile:AuditAttribute
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -82,7 +117,6 @@ namespace BikeSharing.Models
         public string ProfilePictureUrl { get; set; }
         public bool IsActive { get; set; }
     }
-    
 
     public class GeoFenceData:AuditAttribute
     {
@@ -90,6 +124,67 @@ namespace BikeSharing.Models
 
         public long Id { get; set; }
         public string Name { get; set; }
-        public List<Location> Points { get; set; }
+       
     }
+
+    public class GeoFenceDataDetail
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
+        public long GeoFenceDataId { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+
+    }
+
+    public enum BikeCondition
+    {
+        Active, Missing, Broken, Maintenance
+    }
+    public class Bike
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
+        public string BikeNo { get; set; }
+        public long StationId { get; set; }
+        public BikeCondition Condition { get; set; }
+    }
+    public class BikeStation:AuditAttribute
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
+        public int TotalBike { get; set; }
+        public string Address { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public string Name { get; set; }
+        public int BikeUsed { get; set; }
+        public int BikeBroken { get; set; }
+        public int BikeAvailable { get; set; }
+    }
+    public class TripHeader
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
+        public string UserName { get; set; }
+        public string TripNumber { get; set; }
+        public string BikeNo { get; set; }
+        public bool IsActive { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public TimeSpan Duration { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public double TotalDistanceMeter { get; set; }
+    }
+    public class TripDetail:GpsPoint
+    {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public long Id { get; set; }
+        public long TripHeaderId { get; set; }
+
+        public string TripNumber { set; get; }
+
+    }   
+    #endregion
 }

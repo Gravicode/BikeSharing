@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BikeSharing.PhoneSimulator"
+             x:Class="BikeSharing.PhoneSimulator.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Bike Sharing Device Simulator v0.1" 
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+        <Grid Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Text="Device Name" Grid.Row="0" Grid.Column="0"></Label>
+            <Label Text=":" Grid.Row="0" Grid.Column="1"></Label>
+            <Label x:Name="TxtDeviceName" Text="KayuhBike1" Grid.Row="0" Grid.Column="2"></Label>
+
+            <Label Text="Start Device" Grid.Row="1" Grid.Column="0"></Label>
+            <Label Text=":" Grid.Row="1" Grid.Column="1"></Label>
+            <Button x:Name="BtnStart" Text="Start" Grid.Row="1" Grid.Column="2"></Button>
+            
+            <Label Text="SOS" Grid.Row="2" Grid.Column="0"></Label>
+            <Label Text=":" Grid.Row="2" Grid.Column="1"></Label>
+            <Button x:Name="BtnSoS" Text="Alert" Grid.Row="2" Grid.Column="2"></Button>
+            
+            <Label Text="Device Status" Grid.Row="3" Grid.Column="0"></Label>
+            <Label Text=":" Grid.Row="3" Grid.Column="1"></Label>
+            <Label x:Name="TxtStatus" Text="-" Grid.Row="3" Grid.Column="2"></Label>
+
+            <Label Text="Timer" Grid.Row="4" Grid.Column="0"></Label>
+            <Label Text=":" Grid.Row="4" Grid.Column="1"></Label>
+            <Label x:Name="TxtTimer" Text="-" Grid.Row="4" Grid.Column="2"></Label>
+        </Grid>
+       
+    </StackLayout>
+
+</ContentPage>
