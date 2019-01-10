@@ -22,5 +22,10 @@ namespace BikeSharing.MobileApp.Droid
             ZXing.Mobile.MobileBarcodeScanner.Initialize(Application);
             LoadApplication(new App());
         }
+        public override void OnBackPressed()
+        {
+            base.OnBackPressed();
+        }
+
     }
 }

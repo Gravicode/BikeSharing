@@ -12,7 +12,8 @@ namespace BikeSharing.MobileApp
         {
             InitializeComponent();
 
-            MainPage = new StartPage();
+            //MainPage = new StartPage();
+            MainPage = new NavigationPage(new StartPage() { Title = "BIKE SHARING SAMPLE 0.1" });
         }
 
         protected override void OnStart()

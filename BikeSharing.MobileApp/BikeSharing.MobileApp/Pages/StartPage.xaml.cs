@@ -12,6 +12,7 @@ using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using BikeSharing.MobileApp.Pages;
 using static Microsoft.Azure.Amqp.Serialization.SerializableType;
 
 namespace BikeSharing.MobileApp.Pages
@@ -31,6 +32,7 @@ namespace BikeSharing.MobileApp.Pages
         Timer timer;
         string DeviceName = "KayuhBike1";
         //static AzureIoT iot = new AzureIoT();
+        
         public StartPage()
         {
             InitializeComponent();
@@ -77,7 +79,14 @@ namespace BikeSharing.MobileApp.Pages
                var act = new DeviceAction() { ActionName = "SOS", Params0 = "" };
                 client.Publish(ControlTopic, Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(act)), MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE, false);
             };
+            BtnST1.Clicked += BtnST1_Clicked;
+            async void BtnST1_Clicked(object sender, EventArgs e)
+            { 
+                await Navigation.PushAsync(new MapPage() { Title = "Location" });
+            }
+
         }
+        
         void PublishMessage(string Topic, string Pesan)
         {
             client.Publish(Topic, Encoding.UTF8.GetBytes(Pesan), MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE, false);
