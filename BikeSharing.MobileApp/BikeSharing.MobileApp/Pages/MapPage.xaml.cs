@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Forms.Maps;
 using System.Diagnostics;
+using Plugin.Geolocator;
 
 namespace BikeSharing.MobileApp.Pages
 {
@@ -23,14 +24,17 @@ namespace BikeSharing.MobileApp.Pages
                 HeightRequest = 100,
                 WidthRequest = 960,
                 VerticalOptions = LayoutOptions.FillAndExpand
+                
             };
+            loc();
+            //Move To position
+            async void loc() {
+                var locator = CrossGeolocator.Current;
+                var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
 
-            // You can use MapSpan.FromCenterAndRadius 
-            //			map.MoveToRegion (MapSpan.FromCenterAndRadius (
-            //				new Position (37, -122), Distance.FromMiles (0.3)));
-            // or create a new MapSpan object directly
-            map.MoveToRegion(MapSpan.FromCenterAndRadius ( 
-                new Position(-6.560594, 106.783657), Distance.FromMiles(3)));
+                map.MoveToRegion(MapSpan.FromCenterAndRadius(
+                    new Position(position.Latitude, position.Longitude), Distance.FromMiles(3)));
+            }
 
             // add the slider
             var slider = new Slider(1, 18, 1);
@@ -41,7 +45,26 @@ namespace BikeSharing.MobileApp.Pages
                 if (map.VisibleRegion != null)
                     map.MoveToRegion(new MapSpan(map.VisibleRegion.Center, latlongdegrees, latlongdegrees));
             };
-
+            
+            //PIN
+            var station1 = new Position(-6.601361, 106.805080); // Latitude, Longitude
+            var pin = new Pin
+            {
+                Type = PinType.Place,
+                Position = station1,
+                Label = "Station 1",
+                Address = "Tugu Kujang"
+            };
+            var station2 = new Position(-6.592302, 106.800424); 
+            var pin2 = new Pin
+            {
+                Type = PinType.Place,
+                Position = station2,
+                Label = "Station 2",
+                Address = "Sempur"
+            };
+            map.Pins.Add(pin);
+            map.Pins.Add(pin2);
 
             // create map style buttons
             //var street = new Button { Text = "Street" };
@@ -58,12 +81,23 @@ namespace BikeSharing.MobileApp.Pages
                 //Children = { street, hybrid, satellite }
             };
 
+            var btnRent = new Button
+            {
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                Text = "Rent Bike",                                
+            };
+            btnRent.Clicked += btnRent_Clicked;
+            async void btnRent_Clicked(object sender, EventArgs e)
+            {
+                await Navigation.PushAsync(new StartPage());
+            }
+            
 
             // put the page together
             var stack = new StackLayout { Spacing = 0 };
-            stack.Children.Add(map);
-            stack.Children.Add(slider);
+            stack.Children.Add(map);            
             stack.Children.Add(segments);
+            stack.Children.Add(btnRent);            
             Content = stack;
 
 

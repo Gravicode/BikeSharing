@@ -29,14 +29,12 @@
                     TextColor="White" FontAttributes="Bold" FontSize="Large"
                     WidthRequest="150" 
                     BorderWidth="200"></Button>
-                <Button HorizontalOptions="CenterAndExpand" Text="St 1" x:Name="BtnST1"
+                <!--<Button HorizontalOptions="CenterAndExpand" Text="St 1" x:Name="BtnST1"
                     BackgroundColor="LightGray" BorderRadius="10"
                     TextColor="White" FontAttributes="Bold" FontSize="Large"
                     WidthRequest="100" 
-                    BorderWidth="100"></Button>
-                <StackLayout Orientation="Horizontal">
-                </StackLayout>
-            
+                    BorderWidth="100"></Button>-->
+
             </StackLayout>
     </StackLayout>
     </ContentPage.Content>

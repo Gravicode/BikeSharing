@@ -8,12 +8,21 @@ namespace BikeSharing.MobileApp
 {
     public partial class App : Application
     {
+        //public static bool IsUserLoggedIn { get; set; }
         public App()
         {
-            InitializeComponent();
-
+            //if (!IsUserLoggedIn)
+            //{
+            //    MainPage = new TabbedMenu();
+            //}
+            //else
+            //{
+            //    MainPage = new BikeSharing.MobileApp.MainPage();
+            //}
+            //InitializeComponent();
             //MainPage = new StartPage();
-            MainPage = new NavigationPage(new StartPage() { Title = "BIKE SHARING SAMPLE 0.1" });
+            //MainPage = new NavigationPage(new StartPage() { Title = "BIKE SHARING SAMPLE 0.1" });
+            MainPage = new RootPage();
         }
 
         protected override void OnStart()

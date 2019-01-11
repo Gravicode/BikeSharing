@@ -79,14 +79,13 @@ namespace BikeSharing.MobileApp.Pages
                var act = new DeviceAction() { ActionName = "SOS", Params0 = "" };
                 client.Publish(ControlTopic, Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(act)), MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE, false);
             };
-            BtnST1.Clicked += BtnST1_Clicked;
-            async void BtnST1_Clicked(object sender, EventArgs e)
-            { 
-                await Navigation.PushAsync(new MapPage() { Title = "Location" });
-            }
-
+            //BtnST1.Clicked += BtnST1_Clicked;
+            //async void BtnST1_Clicked(object sender, EventArgs e)
+            //{ 
+            //    await Navigation.PushAsync(new UIMap() { Title = "Location" });
+            //}
         }
-        
+
         void PublishMessage(string Topic, string Pesan)
         {
             client.Publish(Topic, Encoding.UTF8.GetBytes(Pesan), MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE, false);
