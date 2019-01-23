@@ -28,13 +28,7 @@
                     BackgroundColor="#a50e0e" BorderRadius="100"
                     TextColor="White" FontAttributes="Bold" FontSize="Large"
                     WidthRequest="150" 
-                    BorderWidth="200"></Button>
-                <!--<Button HorizontalOptions="CenterAndExpand" Text="St 1" x:Name="BtnST1"
-                    BackgroundColor="LightGray" BorderRadius="10"
-                    TextColor="White" FontAttributes="Bold" FontSize="Large"
-                    WidthRequest="100" 
-                    BorderWidth="100"></Button>-->
-
+                    BorderWidth="200"></Button>    
             </StackLayout>
     </StackLayout>
     </ContentPage.Content>

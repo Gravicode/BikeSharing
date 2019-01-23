@@ -17,25 +17,37 @@ namespace BikeSharing.MobileApp.Pages
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Profil",
-                IconSource = "maps.png",
-                TargetType = typeof(UIMap)
+                IconSource = "profile.png",
+                TargetType = typeof(UserProfilePage)
             });
             masterPageItems.Add(new MasterPageItem
             {
-                Title = "MAPS",
+                Title = "Perjalanan Saya",
+                IconSource = "trip.png",
+                TargetType = typeof(StartPage)
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
+                Title = "Maps",
                 IconSource = "maps.png",
                 TargetType = typeof(MapPage)
             });
             masterPageItems.Add(new MasterPageItem
             {
-                Title = "BIKE SHARING",
-                IconSource = "todo.png",
+                Title = "Bike Sharing",
+                IconSource = "bike.jpg",
                 TargetType = typeof(StartPage)
             });
             masterPageItems.Add(new MasterPageItem
             {
+                Title = "Bantuan",
+                IconSource = "bike.jpg",
+                TargetType = typeof(HelpPage)
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
                 Title = "Keluar",
-                IconSource = "reminders.png",
+                IconSource = "out.jpg",
                 TargetType = typeof(SignInPage)
             });
 

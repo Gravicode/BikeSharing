@@ -16,8 +16,10 @@ namespace BikeSharing.MobileApp.Pages
 	public partial class MapPage : ContentPage
 	{
         Map map;
+        Geocoder geocode;
 		public MapPage ()
 		{
+            Title = "Maps";
             map = new Map
             {
                 IsShowingUser = true,
@@ -26,15 +28,15 @@ namespace BikeSharing.MobileApp.Pages
                 VerticalOptions = LayoutOptions.FillAndExpand
                 
             };
-            loc();
+            //loc();
             //Move To position
-            async void loc() {
-                var locator = CrossGeolocator.Current;
-                var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
+            //async void loc() {
+            //    var locator = CrossGeolocator.Current;
+            //    var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
 
                 map.MoveToRegion(MapSpan.FromCenterAndRadius(
-                    new Position(position.Latitude, position.Longitude), Distance.FromMiles(3)));
-            }
+                    new Position(- 6.601361, 106.805080), Distance.FromMiles(3)));
+            //}
 
             // add the slider
             var slider = new Slider(1, 18, 1);
@@ -45,15 +47,18 @@ namespace BikeSharing.MobileApp.Pages
                 if (map.VisibleRegion != null)
                     map.MoveToRegion(new MapSpan(map.VisibleRegion.Center, latlongdegrees, latlongdegrees));
             };
-            
+
             //PIN
+            //var fortMasonPosition = new Position(37.8044866, -122.4324132);            
             var station1 = new Position(-6.601361, 106.805080); // Latitude, Longitude
+            var possibleAddresses = geocode.GetAddressesForPositionAsync(station1);
             var pin = new Pin
             {
                 Type = PinType.Place,
                 Position = station1,
                 Label = "Station 1",
-                Address = "Tugu Kujang"
+                Address = geocode.GetAddressesForPositionAsync(station1).ToString()
+                
             };
             var station2 = new Position(-6.592302, 106.800424); 
             var pin2 = new Pin
@@ -91,11 +96,25 @@ namespace BikeSharing.MobileApp.Pages
             {
                 await Navigation.PushAsync(new StartPage());
             }
-            
+
+            //popups
+            var btnSos = new Button
+            {
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                Text = "!!!"
+            };
+            btnSos.Clicked += btnSos_Clicked;
+            async void btnSos_Clicked(object sender, EventArgs e)
+            {
+                
+                var action = await DisplayActionSheet("Apa ada masalah?", null, "Cancel", "Sepeda Rusak", "Sepeda Tidak Bisa Terkunci");
+                Debug.WriteLine("Action: " + action, "Location: " + station1.Latitude.ToString());
+            }
 
             // put the page together
             var stack = new StackLayout { Spacing = 0 };
-            stack.Children.Add(map);            
+            stack.Children.Add(map);
+            stack.Children.Add(btnSos);
             stack.Children.Add(segments);
             stack.Children.Add(btnRent);            
             Content = stack;
