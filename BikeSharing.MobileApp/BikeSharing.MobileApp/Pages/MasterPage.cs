@@ -10,6 +10,7 @@ namespace BikeSharing.MobileApp.Pages
         public ListView ListView { get { return listView; } }
 
         ListView listView;
+        Button Btnlogout;
 
         public MasterPage()
         {
@@ -24,7 +25,7 @@ namespace BikeSharing.MobileApp.Pages
             {
                 Title = "Perjalanan Saya",
                 IconSource = "trip.png",
-                TargetType = typeof(StartPage)
+                TargetType = typeof(History)
             });
             masterPageItems.Add(new MasterPageItem
             {
@@ -50,6 +51,8 @@ namespace BikeSharing.MobileApp.Pages
                 IconSource = "out.jpg",
                 TargetType = typeof(SignInPage)
             });
+
+
 
             listView = new ListView
             {
@@ -80,6 +83,17 @@ namespace BikeSharing.MobileApp.Pages
             {
                 Children = { listView }
             };
+
+            Btnlogout = new Button
+            {
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                Text = "Keluar"
+            };
+            Btnlogout.Clicked += logout_Clicked;
+        }
+        private void logout_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new SignInPage();
         }
     }
 }
