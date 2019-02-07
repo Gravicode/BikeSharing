@@ -1,37 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BikeSharing.MobileApp.Pages.HistoryPage">
-    <ContentPage.Content>
-        <ListView  x:Name="lstView" RowHeight="80">
+             xmlns:local="clr-namespace:BikeSharing"
+             xmlns:Models1="clr-namespace:BikeSharing.MobileApp.Models"
+             xmlns:view="clr-namespace:BikeSharing.MobileApp.Pages"
+             x:Class="BikeSharing.MobileApp.Pages.HistoryPage;assembly=BikeSharing.MobileApp"
+             Title="History-View">
+    <ContentPage.BindingContext>
+        <Models1:HistoryDataViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="History Bike"
+             VerticalOptions="Start"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             BackgroundColor="Transparent"
+             HorizontalOptions="CenterAndExpand" />
+        <ListView x:Name="listView" SelectedItem="{Binding SelcetedItem,Mode=TwoWay}" 
+              RowHeight="120" 
+              ItemsSource="{Binding HistoryDataCollection}" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <ContentView Padding="5">
-                            <Frame OutlineColor="CornflowerBlue"
-                               Padding="10">
-                                <StackLayout Orientation="Horizontal">
-                                    <BoxView Color="CornflowerBlue"
-                                         WidthRequest="50"
-                                         HeightRequest="50" />
-                                    <StackLayout>
-                                        <Label Text="Alkaren"
-                                           FontSize="Small" />
-                                        <Label Text="BikeSharing1"
-                                           FontSize="Small" />
-                                    </StackLayout>
-                                    <StackLayout>
-                                        <Label Text="12/12/12"
-                                           FontSize="Small"/>
-                                        <Label Text="03:20"
-                                           FontSize="Small"/>
-                                    </StackLayout>
-                                </StackLayout>
-                            </Frame>
-                        </ContentView>
+                        <view:ViewHistory/>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </ContentPage.Content>
+    </StackLayout>
 </ContentPage>

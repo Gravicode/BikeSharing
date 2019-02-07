@@ -8,6 +8,8 @@ namespace BikeSharing.MobileApp
 {
     public partial class App : Application
     {
+        public static double ScreenHeight;
+        public static double ScreenWidth;
         //public static bool IsUserLoggedIn { get; set; }
         public App()
         {

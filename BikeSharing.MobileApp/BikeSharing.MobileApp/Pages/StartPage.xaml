@@ -17,13 +17,13 @@
                        VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
                        WidthRequest="200" HorizontalTextAlignment="Center"></Entry>
             <Button HorizontalOptions="CenterAndExpand" Text="Start Bike" x:Name="BtnStart" 
-                    BackgroundColor="#e3e9f2" BorderRadius="10"
-                    TextColor="#2bdb13" FontAttributes="Bold" FontSize="Large" 
-                    WidthRequest="100"></Button>
+                    BackgroundColor="ForestGreen" BorderRadius="30"
+                    TextColor="White" FontAttributes="Bold" FontSize="20" 
+                    WidthRequest="190" HeightRequest="50"></Button>
             <Button HorizontalOptions="CenterAndExpand" Text="Stop Bike" x:Name="BtnStop" 
-                    BackgroundColor="#e3e9f2" BorderRadius="10"
-                    TextColor="#61B4BB" FontAttributes="Bold" FontSize="Large"
-                    WidthRequest="100"></Button>
+                    BackgroundColor="OrangeRed" BorderRadius="30"
+                    TextColor="White" FontAttributes="Bold" FontSize="20"
+                    WidthRequest="180" HeightRequest="50"></Button>
             <Button HorizontalOptions="CenterAndExpand" Text="SOS" x:Name="BtnSOS"
                     BackgroundColor="#a50e0e" BorderRadius="100"
                     TextColor="White" FontAttributes="Bold" FontSize="Large"

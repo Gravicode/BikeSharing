@@ -3,29 +3,29 @@
     <ContentPage.Content>
         <ScrollView>
             <AbsoluteLayout BackgroundColor="White">
-                <BoxView BackgroundColor="WhiteSmoke" AbsoluteLayout.LayoutBounds="0,0,1,100" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" />
+                <Image Source="bicycle.png" AbsoluteLayout.LayoutBounds="0,0,1,100" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" />
                 <Button BackgroundColor="White" BorderRadius="35" AbsoluteLayout.LayoutBounds=".5,55,70,70" AbsoluteLayout.LayoutFlags="XProportional" />
-                <Button BackgroundColor="Red" BorderRadius="30" AbsoluteLayout.LayoutBounds=".5,60,60,60" AbsoluteLayout.LayoutFlags="XProportional" />
+                <Button BackgroundColor="ForestGreen" BorderRadius="30" AbsoluteLayout.LayoutBounds=".5,60,60,60" AbsoluteLayout.LayoutFlags="XProportional" />
                 <Label Text="Alkaren Ichsan" FontAttributes="Bold" FontSize="22" TextColor="Black" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds=".5,140,1,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
                 <!--<Entry Text="Bio + Hashtags" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds=".5,180,1,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />-->
                 <AbsoluteLayout AbsoluteLayout.LayoutBounds=".25,180,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Label FontSize="12" Text="Full Name :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
-                    <Entry FontSize="12" Text="Alkaren Ichsan" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                    <Label FontSize="15" Text="Full Name :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry FontSize="15" Text="Alkaren Ichsan" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
                 </AbsoluteLayout>
                 <AbsoluteLayout AbsoluteLayout.LayoutBounds=".25,230,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Label FontSize="12" Text="Email :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
-                    <Entry FontSize="12" Text="alkarenichsan@gmail.com" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                    <Label FontSize="15" Text="Email :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry FontSize="15" Text="alkarenichsan@gmail.com" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
                 </AbsoluteLayout>
                 <AbsoluteLayout AbsoluteLayout.LayoutBounds=".25,280,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Label FontSize="12" Text="Mobile Number :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
-                    <Entry FontSize="12" Text="08151617212" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                    <Label FontSize="15" Text="Mobile Number :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry FontSize="15" Text="08151617212" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
                 </AbsoluteLayout>
                 <AbsoluteLayout AbsoluteLayout.LayoutBounds=".25,330,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Label FontSize="12" Text="Password:" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
-                    <Entry FontSize="12" Text="**********" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                    <Label FontSize="15" Text="Password:" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry FontSize="15" Text="**********" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
                 </AbsoluteLayout>
-                <AbsoluteLayout AbsoluteLayout.LayoutBounds="85,380,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Button BackgroundColor="Red" BorderRadius="10" HorizontalOptions="CenterAndExpand" />
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="165,380,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Button BackgroundColor="ForestGreen" Text="Save" TextColor="White" FontSize="15" BorderRadius="20" WidthRequest="150" HeightRequest="50" HorizontalOptions="Center" />
                 </AbsoluteLayout>
             </AbsoluteLayout>
         </ScrollView>

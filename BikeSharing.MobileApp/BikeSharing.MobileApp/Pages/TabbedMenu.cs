@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Xam.Plugin.SimpleAppIntro;
 using Xamarin.Forms;
 
 namespace BikeSharing.MobileApp.Pages
@@ -12,7 +13,6 @@ namespace BikeSharing.MobileApp.Pages
             //var navigationPage = new NavigationPage(new LoginPage());
             //navigationPage.Icon = "schedule.png";
             //navigationPage.Title = "Schedule";
-
             Children.Add(new SignInPage());
             //Children.Add(navigationPage);
             Children.Add(new RegisterPage());

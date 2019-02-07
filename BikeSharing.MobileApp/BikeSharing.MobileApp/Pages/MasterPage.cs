@@ -25,7 +25,7 @@ namespace BikeSharing.MobileApp.Pages
             {
                 Title = "Perjalanan Saya",
                 IconSource = "trip.png",
-                TargetType = typeof(History)
+                TargetType = typeof(HistoryPage)
             });
             masterPageItems.Add(new MasterPageItem
             {
@@ -43,7 +43,7 @@ namespace BikeSharing.MobileApp.Pages
             {
                 Title = "Bantuan",
                 IconSource = "bike.jpg",
-                TargetType = typeof(HelpPage)
+                TargetType = typeof(PageHelp)
             });
             masterPageItems.Add(new MasterPageItem
             {
@@ -67,7 +67,7 @@ namespace BikeSharing.MobileApp.Pages
                     image.SetBinding(Image.SourceProperty, "IconSource");
                     var label = new Label { VerticalOptions = LayoutOptions.FillAndExpand };
                     label.SetBinding(Label.TextProperty, "Title");
-
+                    
                     grid.Children.Add(image);
                     grid.Children.Add(label, 1, 0);
 
@@ -84,12 +84,12 @@ namespace BikeSharing.MobileApp.Pages
                 Children = { listView }
             };
 
-            Btnlogout = new Button
-            {
-                HorizontalOptions = LayoutOptions.CenterAndExpand,
-                Text = "Keluar"
-            };
-            Btnlogout.Clicked += logout_Clicked;
+            //Btnlogout = new Button
+            //{
+            //    HorizontalOptions = LayoutOptions.CenterAndExpand,
+            //    Text = "Keluar"
+            //};
+            //Btnlogout.Clicked += logout_Clicked;
         }
         private void logout_Clicked(object sender, EventArgs e)
         {

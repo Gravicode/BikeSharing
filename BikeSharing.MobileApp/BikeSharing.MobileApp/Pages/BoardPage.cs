@@ -1,32 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Xam.Plugin.SimpleAppIntro;
 using Xamarin.Forms;
 
-
 namespace BikeSharing.MobileApp.Pages
 {
-    public class RootPage : MasterDetailPage
-    {
-        MasterPage masterPage;
-
-        public RootPage()
-        {
-            //Show();
-            //ShowLoginDialog();
-            masterPage = new MasterPage();
-            Master = masterPage;
-            Detail = new NavigationPage(new MapPage());
-
-            masterPage.ListView.ItemSelected += OnItemSelected;
-
-            if (Device.RuntimePlatform == Device.UWP)
-            {
-                MasterBehavior = MasterBehavior.Popover;
-            }
-        }
-
+	public class BoardPage : ContentPage
+	{
+		public BoardPage ()
+		{
+            Show();
+		}
         private void Show()
         {
             var welcomePage = new SimpleAppIntro(new List<object>() {
@@ -72,7 +58,7 @@ namespace BikeSharing.MobileApp.Pages
         private async void OnSkipButtonClicked()
         {
             //DisplayAlert("Result", "Skip", "OK");
-            var tab = new RootPage();
+            var tab = new TabbedMenu();
             await Navigation.PushAsync(tab);
         }
 
@@ -81,27 +67,7 @@ namespace BikeSharing.MobileApp.Pages
         /// </summary>
         private void OnDoneButtonClicked()
         {
-            //DisplayAlert("Result", "Done", "OK");
-            //var tab = new RootPage();
-            //await Navigation.PushAsync(tab);
-            ShowLoginDialog();
-        }
-
-        async void ShowLoginDialog()
-        {
-            var page = new TabbedMenu();
-            await Navigation.PushModalAsync(page);
-        }
-
-        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            var item = e.SelectedItem as MasterPageItem;
-            if (item != null)
-            {
-                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
-                masterPage.ListView.SelectedItem = null;
-                IsPresented = false;
-            }
+            DisplayAlert("Result", "Skip", "OK");
         }
     }
 }
