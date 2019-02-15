@@ -43,13 +43,13 @@ namespace BikeSharing.MobileApp.Pages
             {
                 Title = "Bantuan",
                 IconSource = "bike.jpg",
-                TargetType = typeof(PageHelp)
+                TargetType = typeof(HelpPage)
             });
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Keluar",
                 IconSource = "out.jpg",
-                TargetType = typeof(SignInPage)
+                TargetType = typeof(TabbedMenu)
             });
 
 
@@ -93,7 +93,7 @@ namespace BikeSharing.MobileApp.Pages
         }
         private void logout_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new SignInPage();
+            App.Current.MainPage = new TabbedMenu();
         }
     }
 }

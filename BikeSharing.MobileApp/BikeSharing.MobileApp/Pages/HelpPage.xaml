@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeSharing.MobileApp.HelpPage"
+              BackgroundColor="White" Title="Bantuan">
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,40,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+            <Image Source="bgloginbike.jpg" VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Label HorizontalTextAlignment="Center" Text="Temukan BikeSharing Anda" TextColor="#0c6329" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Italic"/>
+            <Button x:Name="btnSkip1" Text="skip" BorderWidth="2" TextColor="White" FontSize="Small" BackgroundColor="#748e59" BorderColor="White" WidthRequest="100" HeightRequest="50" BorderRadius="20" VerticalOptions="End" HorizontalOptions="Center" Margin="0,30,0,0"/>
+            <!--<Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="Yellow" Grid.Row="0" Grid.Column="0" HeightRequest="3" WidthRequest="35" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Margin="50,150,-90,-50"/>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.Column="1" HeightRequest="3" WidthRequest="35" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Margin="40,150,0,-50"/>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.Column="2" HeightRequest="3" WidthRequest="35" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Margin="-10,150,50,-50"/>
+                <BoxView BackgroundColor="White" Grid.Row="0" Grid.Column="3" HeightRequest="3" WidthRequest="35" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Margin="-160,150,0,-50"/>
+            </Grid>-->
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,40,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+            <Image Source="bgloginbike.jpg" VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Label HorizontalTextAlignment="Center" Text="Pindai QR pada perangkat yang terpasang&#x0a; di BikeSharing untuk membukanya.&#x0a;&#x0a; Note : Jangan lupa untuk mengizinkan&#x0a; aplikasi BikeSharing Kamera!" TextColor="#0c6329" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Italic" />
+            <Button x:Name="btnSkip2" Text="skip" BorderWidth="2" TextColor="White" FontSize="Small" BackgroundColor="#748e59" BorderColor="White" WidthRequest="100" HeightRequest="50" BorderRadius="20" VerticalOptions="End" HorizontalOptions="Center" Margin="0,30,0,0"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,40,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+            <Image Source="bgloginbike.jpg" VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Label HorizontalTextAlignment="Center" Text="BikeSharing anda sekarang siap untuk&#x0a; dikendarai ke tujuan pilihan anda!&#x0a;Ingat, selalu bersepeda dengan aman." TextColor="#0c6329" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Italic" />
+            <Button x:Name="btnSkip3" Text="skip" BorderWidth="2" TextColor="White" FontSize="Small" BackgroundColor="#748e59" BorderColor="White" WidthRequest="100" HeightRequest="50" BorderRadius="20" VerticalOptions="End" HorizontalOptions="Center" Margin="0,30,0,0"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android" Value="0,40,0,0" />
+            </OnPlatform>
+        </ContentPage.Padding>
+        <StackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+            <Image Source="bgloginbike.jpg" VerticalOptions="Start" HorizontalOptions="Center"/>
+            <Label HorizontalTextAlignment="Center" Text="Setelah anda tiba di tujuan anda,&#x0a; parkirlah BikeSharing anda di stasiun terdekat untuk mengakhiri perjalanan anda. &#x0a;Sepeda anda akan terkunci secara otomatis." TextColor="#0c6329" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Italic" />
+            <Button x:Name="btnSkip4" Text="skip" BorderWidth="2" TextColor="White" FontSize="Small" BackgroundColor="#748e59" BorderColor="White" WidthRequest="100" HeightRequest="50" BorderRadius="20" VerticalOptions="End" HorizontalOptions="Center" Margin="0,30,0,0"/>
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>

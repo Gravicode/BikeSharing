@@ -14,7 +14,7 @@ namespace BikeSharing.MobileApp.Pages
 	{
 		public UserProfilePage ()
 		{
-			InitializeComponent ();
-		}
+            InitializeComponent ();
+        }
 	}
 }

@@ -1,33 +1,26 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BikeSharing.MobileApp.Pages.UserProfilePage" Title="AbsoluteLayout">
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="BikeSharing.MobileApp.Pages.UserProfilePage" BackgroundColor="White" Title="Profile">
     <ContentPage.Content>
         <ScrollView>
-            <AbsoluteLayout BackgroundColor="White">
-                <Image Source="bicycle.png" AbsoluteLayout.LayoutBounds="0,0,1,100" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" />
-                <Button BackgroundColor="White" BorderRadius="35" AbsoluteLayout.LayoutBounds=".5,55,70,70" AbsoluteLayout.LayoutFlags="XProportional" />
-                <Button BackgroundColor="ForestGreen" BorderRadius="30" AbsoluteLayout.LayoutBounds=".5,60,60,60" AbsoluteLayout.LayoutFlags="XProportional" />
-                <Label Text="Alkaren Ichsan" FontAttributes="Bold" FontSize="22" TextColor="Black" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds=".5,140,1,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
-                <!--<Entry Text="Bio + Hashtags" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds=".5,180,1,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />-->
-                <AbsoluteLayout AbsoluteLayout.LayoutBounds=".25,180,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Label FontSize="15" Text="Full Name :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
-                    <Entry FontSize="15" Text="Alkaren Ichsan" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
-                </AbsoluteLayout>
-                <AbsoluteLayout AbsoluteLayout.LayoutBounds=".25,230,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Label FontSize="15" Text="Email :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
-                    <Entry FontSize="15" Text="alkarenichsan@gmail.com" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
-                </AbsoluteLayout>
-                <AbsoluteLayout AbsoluteLayout.LayoutBounds=".25,280,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Label FontSize="15" Text="Mobile Number :" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
-                    <Entry FontSize="15" Text="08151617212" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
-                </AbsoluteLayout>
-                <AbsoluteLayout AbsoluteLayout.LayoutBounds=".25,330,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Label FontSize="15" Text="Password:" TextColor="Black" AbsoluteLayout.LayoutBounds="0,15,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
-                    <Entry FontSize="15" Text="**********" TextColor="Black" BackgroundColor="White" AbsoluteLayout.LayoutBounds="1,1,.75,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
-                </AbsoluteLayout>
-                <AbsoluteLayout AbsoluteLayout.LayoutBounds="165,380,1,20" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
-                    <Button BackgroundColor="ForestGreen" Text="Save" TextColor="White" FontSize="15" BorderRadius="20" WidthRequest="150" HeightRequest="50" HorizontalOptions="Center" />
-                </AbsoluteLayout>
-            </AbsoluteLayout>
+            <StackLayout>
+                <StackLayout>
+                    <Grid Padding="0,0,0,-80">
+                        <Image Grid.Column="0" Grid.Row="0" Source="bgprofile.jpg" VerticalOptions="Start" HorizontalOptions="Center" />
+                        <controls:CircleImage Grid.Column="0" Grid.Row="0" Source="aldo.jpg" VerticalOptions="End" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" BorderThickness="3" BorderColor="White" Aspect="AspectFill" Margin="0,-50,0,60"/>
+                    </Grid>
+                </StackLayout>
+                <StackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+                    <Label Text="Nurhadi Aldo" HorizontalOptions="Center" FontSize="25" TextColor="#748e59" FontAttributes="Bold" ></Label>
+                    <Entry Placeholder="Full Name"></Entry>
+                    <Entry Placeholder="Username"></Entry>
+                    <Entry Placeholder="Password" IsPassword="True"></Entry>
+                    <Entry Placeholder="Email"></Entry>
+                    <Button Text="edit" BorderRadius="20" TextColor="White" BackgroundColor="#748e59"></Button>
+                </StackLayout>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

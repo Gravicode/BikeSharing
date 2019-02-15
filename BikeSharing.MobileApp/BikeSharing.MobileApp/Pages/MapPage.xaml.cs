@@ -84,7 +84,7 @@ namespace BikeSharing.MobileApp.Pages
                 async void loc()
                 {
                     var locator = CrossGeolocator.Current;
-                    var position = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
+                    var position = await locator.GetPositionAsync();
 
                     map.MoveToRegion(MapSpan.FromCenterAndRadius(
                     new Position(position.Latitude, position.Longitude/*-6.601361, 106.805080*/), Distance.FromMiles(3)).WithZoom(20));

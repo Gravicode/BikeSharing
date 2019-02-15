@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeSharing.MobileApp.Pages.LoginPage"
+             Title="Login" WidthRequest="20" BackgroundColor="White">
+    <StackLayout Spacing="20" Padding="40" VerticalOptions="Center">
+        <Image Source="bgloginbike.jpg" />
+        <Entry Placeholder="Username" PlaceholderColor="Black"  TextColor="Black"></Entry>
+        <Entry Placeholder="Password" PlaceholderColor="Black" TextColor="Black" IsPassword="True"></Entry>
+        <Button x:Name="btnLogin" Text="Log In" TextColor="White" BorderRadius="20" BackgroundColor="#748e59"></Button>
+    </StackLayout>
+</ContentPage>
