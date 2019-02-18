@@ -25,8 +25,8 @@ namespace BikeSharing.Service.Controllers
         }
 
         // GET: api/AppLogs
-        [HttpGet]
-        [Route("GetUserProfiles")]
+        [HttpGet("action")]
+       //[Route("GetUserProfiles")]
         public async Task<IActionResult> GetUserProfiles()
         {
             var hasil = new OutputData() { IsSucceed = true };

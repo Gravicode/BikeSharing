@@ -25,8 +25,8 @@ namespace BikeSharing.Service.Controllers
         }
 
         // GET: api/AppLogs
-        [HttpGet]
-        [Route("GetTripheader")]
+        [HttpGet("action")]
+        //[Route("GetTripheader")]
         public async Task<IActionResult> GetTripheader()
         {
             var hasil = new OutputData() { IsSucceed = true };
