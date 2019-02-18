@@ -25,7 +25,7 @@ namespace BikeSharing.Service.Controllers
         }
 
         // GET: api/AppLogs
-        [HttpGet("action")]
+        [HttpGet("[action]")]
         //[Route("GetBikeStations")]
         public async Task<IActionResult> GetBikeStations()
         {
