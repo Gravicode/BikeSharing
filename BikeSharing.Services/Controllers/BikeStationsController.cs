@@ -114,6 +114,7 @@ namespace BikeSharing.Service.Controllers
         }
 
         [HttpPost]
+        [Route("PostBikeStation")]
         public async Task<IActionResult> PostBikeStations([FromBody] BikeStation BikeStations)
         {
             if (!ModelState.IsValid)

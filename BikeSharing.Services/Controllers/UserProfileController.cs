@@ -114,6 +114,7 @@ namespace BikeSharing.Service.Controllers
         }
 
         [HttpPost]
+        [Route("PostUserProfile")]
         public async Task<IActionResult> PostUserProfiles([FromBody] UserProfile UserProfiles)
         {
             if (!ModelState.IsValid)
