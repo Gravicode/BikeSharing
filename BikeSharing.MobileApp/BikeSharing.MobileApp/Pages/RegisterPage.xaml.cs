@@ -10,19 +10,34 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using BikeSharing.Models;
 
 namespace BikeSharing.MobileApp.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RegisterPage : ContentPage
 	{
-		public RegisterPage ()
+        bool isNewItem;
+        //public UserProfile item { get; set; } 
+		public RegisterPage (bool isNew = false)
 		{
+            //item = new UserProfile();
 			InitializeComponent ();
-		}
+            isNewItem = isNew;
+            //BindingContext = item;
+        }
 
         private MediaFile _mediaFile;
         private string URL { get; set; }
+
+        private async void Save_Clicked(object sender, EventArgs e)
+        {
+                var todoItem = (UserProfile)BindingContext;
+                await App.TodoManager.SaveTaskAsync(todoItem, isNewItem);
+                await Navigation.PushModalAsync(new TabbedMenu());
+                //MessagingCenter.Send<UserProfile>(this.item, "newitem");
+                //await Navigation.PushModalAsync(new TabbedMenu());
+        }
 
         private async void btnSelectPic_Clicked(object sender, EventArgs e)
         {
