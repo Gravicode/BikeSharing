@@ -114,6 +114,7 @@ namespace BikeSharing.Service.Controllers
         }
 
         [HttpPost]
+        [Route("PostTripHeaders")]
         public async Task<IActionResult> PostTripHeader([FromBody] TripHeader tripHeader)
         {
             if (!ModelState.IsValid)

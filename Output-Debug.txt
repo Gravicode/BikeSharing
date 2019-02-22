@@ -1,0 +1,346 @@
+﻿'dotnet.exe' (CoreCLR: DefaultDomain): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Private.CoreLib.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\jobs\BikeSharing\BikeSharing.StreamService\bin\Debug\netcoreapp2.1\BikeSharing.StreamService.dll'. Symbols loaded.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Runtime.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.configuration.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.entityframeworkcore\2.1.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\netstandard.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.ComponentModel.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\servicestack.redis.core\5.4.0\lib\netstandard2.0\ServiceStack.Redis.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\servicestack.interfaces.core\5.4.0\lib\netstandard2.0\ServiceStack.Interfaces.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Collections.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Console.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Runtime.Extensions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.configuration\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.configuration.fileextensions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.FileExtensions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.configuration.json\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Json.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\jobs\BikeSharing\BikeSharing.StreamService\bin\Debug\netcoreapp2.1\BikeSharing.Tools.dll'. Symbols loaded.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\m2mqttdotnetcore\1.0.8\lib\netstandard2.0\M2Mqtt.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Threading.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.fileproviders.physical\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Physical.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.fileproviders.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.primitives\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.IO.FileSystem.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Threading.Tasks.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Linq.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Runtime.InteropServices.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\newtonsoft.json\12.0.1\lib\netstandard2.0\Newtonsoft.Json.dll'. Symbols loaded.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Linq.Expressions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.ComponentModel.TypeConverter.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.ObjectModel.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Runtime.Numerics.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Private.Uri.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\pomelo.entityframeworkcore.mysql\2.1.4\lib\netstandard2.0\Pomelo.EntityFrameworkCore.MySql.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.entityframeworkcore.relational\2.1.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\mysqlconnector\0.47.1\lib\netcoreapp2.1\MySqlConnector.dll'. 
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Data.Common.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Diagnostics.Tracing.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Text.RegularExpressions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Reflection.Emit.ILGeneration.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Reflection.Emit.Lightweight.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Reflection.Primitives.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.entityframeworkcore.abstractions\2.1.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.ComponentModel.Primitives.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.logging.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.caching.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Collections.Concurrent.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.dependencyinjection\2.1.1\lib\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\remotion.linq\2.2.0\lib\netstandard1.0\Remotion.Linq.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Transactions.Local.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.logging\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\system.interactive.async\3.1.1\lib\netstandard1.3\System.Interactive.Async.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Diagnostics.DiagnosticSource.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.caching.memory\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\microsoft.extensions.options\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Resources.ResourceManager.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'Anonymously Hosted DynamicMethods Assembly'. 
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\jobs\BikeSharing\BikeSharing.StreamService\bin\Debug\netcoreapp2.1\BikeSharing.Models.dll'. Symbols loaded.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.ComponentModel.Annotations.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Diagnostics.Debug.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\pomelo.jsonobject\2.0.0\lib\netstandard2.0\Pomelo.JsonObject.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Collections.Immutable.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Reflection.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Reflection.Extensions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Linq.Queryable.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Threading.Thread.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Net.Primitives.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\Microsoft.Win32.Primitives.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Runtime.InteropServices.RuntimeInformation.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Net.Sockets.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Memory.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Net.NameResolution.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Threading.Overlapped.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Security.Cryptography.X509Certificates.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Collections.NonGeneric.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Security.Cryptography.Primitives.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Net.Security.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Buffers.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Security.Cryptography.Encoding.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Security.Principal.Windows.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Security.Claims.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Security.Principal.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Diagnostics.Process.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Security.Cryptography.Algorithms.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Threading.ThreadPool.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Xml.ReaderWriter.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Private.Xml.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\servicestack.text.core\5.4.0\lib\netcoreapp2.1\ServiceStack.Text.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Users\gravicode\.nuget\packages\servicestack.common.core\5.4.0\lib\netstandard2.0\ServiceStack.Common.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Text.Encoding.Extensions.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Threading.Timer.dll'. Cannot find or open the PDB file.
+The thread 0x1040 has exited with code 0 (0x0).
+The thread 0x1cac has exited with code 0 (0x0).
+'QRCodeGenerator.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: DefaultDomain): Loaded 'C:\jobs\BikeSharing\QRCodeGenerator\bin\Debug\QRCodeGenerator.exe'. Symbols loaded.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\PrivateAssemblies\Runtime\Microsoft.VisualStudio.Debugger.Runtime.dll'. 
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework.Aero2\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.Aero2.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework-SystemXml\v4.0_4.0.0.0__b77a5c561934e089\PresentationFramework-SystemXml.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\Users\GRAVIC~1\AppData\Local\Temp\VisualStudio.XamlDiagnostics.7484\Microsoft.VisualStudio.DesignTools.WpfTap.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\SMDiagnostics\v4.0_4.0.0.0__b77a5c561934e089\SMDiagnostics.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Internals\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Internals.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\UIAutomationTypes\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationTypes.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\UIAutomationProvider\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationProvider.dll'. Cannot find or open the PDB file.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\jobs\BikeSharing\QRCodeGenerator\bin\Debug\zxing.dll'. Symbols loaded.
+'QRCodeGenerator.exe' (CLR v4.0.30319: QRCodeGenerator.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Cannot find or open the PDB file.
+The thread 0x15cc has exited with code 0 (0x0).
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Runtime.Serialization.Formatters.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Diagnostics.TraceSource.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Collections.Specialized.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Drawing.Primitives.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Runtime.Serialization.Primitives.dll'. Cannot find or open the PDB file.
+The thread 0x3644 has exited with code 0 (0x0).
+Exception thrown: 'System.Net.Sockets.SocketException' in System.Net.Sockets.dll
+Exception thrown: 'System.IO.IOException' in System.Net.Sockets.dll
+Exception thrown: 'System.IO.IOException' in System.Net.Security.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.Threading.Tasks.TaskCanceledException' in System.Private.CoreLib.dll
+Exception thrown: 'System.Threading.Tasks.TaskCanceledException' in System.Private.CoreLib.dll
+Exception thrown: 'System.Net.Sockets.SocketException' in System.Net.Sockets.dll
+Exception thrown: 'System.IO.IOException' in System.Net.Sockets.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.Threading.Tasks.TaskCanceledException' in System.Private.CoreLib.dll
+Exception thrown: 'System.Threading.Tasks.TaskCanceledException' in System.Private.CoreLib.dll
+Exception thrown: 'MySql.Data.MySqlClient.MySqlException' in MySqlConnector.dll
+Exception thrown: 'MySql.Data.MySqlClient.MySqlException' in System.Private.CoreLib.dll
+Exception thrown: 'MySql.Data.MySqlClient.MySqlException' in MySqlConnector.dll
+Exception thrown: 'MySql.Data.MySqlClient.MySqlException' in System.Private.CoreLib.dll
+Exception thrown: 'MySql.Data.MySqlClient.MySqlException' in Microsoft.EntityFrameworkCore.Relational.dll
+Exception thrown: 'MySql.Data.MySqlClient.MySqlException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'MySql.Data.MySqlClient.MySqlException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+Exception thrown: 'System.InvalidOperationException' in Microsoft.EntityFrameworkCore.dll
+The thread 0x2d78 has exited with code 0 (0x0).
+The thread 0x289c has exited with code 0 (0x0).
+The thread 0x169c has exited with code 0 (0x0).
+The thread 0x3440 has exited with code 0 (0x0).
+The thread 0x35d4 has exited with code 0 (0x0).
+The thread 0x3548 has exited with code 0 (0x0).
+The thread 0x19a4 has exited with code 0 (0x0).
+The thread 0x1910 has exited with code 0 (0x0).
+The thread 0x3710 has exited with code 0 (0x0).
+The thread 0x3508 has exited with code 0 (0x0).
+The thread 0x1f54 has exited with code 0 (0x0).
+The thread 0x5f4 has exited with code 0 (0x0).
+The thread 0x2934 has exited with code 0 (0x0).
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.IO.IOException' in System.Net.Security.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+Exception thrown: 'System.IO.IOException' in System.Private.CoreLib.dll
+The thread 0x2e0c has exited with code 0 (0x0).
+The thread 0x326c has exited with code 0 (0x0).
+The thread 0xcc has exited with code 0 (0x0).
+The thread 0x514 has exited with code 0 (0x0).
+The thread 0xc64 has exited with code 0 (0x0).
+The thread 0x13e8 has exited with code 0 (0x0).
+The thread 0x328c has exited with code 0 (0x0).
+The thread 0x2d98 has exited with code 0 (0x0).
+The thread 0x3098 has exited with code 0 (0x0).
+The thread 0x2764 has exited with code 0 (0x0).
+The thread 0xce0 has exited with code 0 (0x0).
+The thread 0x29d0 has exited with code 0 (0x0).
+The thread 0x1c44 has exited with code 0 (0x0).
+The thread 0x3668 has exited with code 0 (0x0).
+The thread 0x2eec has exited with code 0 (0x0).
+The thread 0x17b0 has exited with code 0 (0x0).
+The thread 0x222c has exited with code 0 (0x0).
+The thread 0x3510 has exited with code 0 (0x0).
+The thread 0x307c has exited with code 0 (0x0).
+Exception thrown: 'System.Net.Sockets.SocketException' in M2Mqtt.dll
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Diagnostics.StackTrace.dll'. Cannot find or open the PDB file.
+'dotnet.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\2.1.6\System.Reflection.Metadata.dll'. Cannot find or open the PDB file.
+Exception thrown: 'System.Net.Sockets.SocketException' in M2Mqtt.dll
+The thread 0x2f0 has exited with code 0 (0x0).
+The thread 0x219c has exited with code 0 (0x0).
+The thread 0x335c has exited with code 0 (0x0).
+The thread 0xec0 has exited with code 0 (0x0).
+The thread 0xc68 has exited with code 0 (0x0).
+The thread 0x3798 has exited with code 0 (0x0).
+The thread 0x3128 has exited with code 0 (0x0).
+The thread 0x30ec has exited with code 0 (0x0).
+The thread 0x8 has exited with code 0 (0x0).
+The thread 0x2be4 has exited with code 0 (0x0).
+The thread 0x1924 has exited with code 0 (0x0).
+The thread 0x36ac has exited with code 0 (0x0).
+The thread 0xf94 has exited with code 0 (0x0).
+The thread 0x30c8 has exited with code 0 (0x0).
+The thread 0x298 has exited with code 0 (0x0).
+The thread 0x2428 has exited with code 0 (0x0).
+The thread 0x2240 has exited with code 0 (0x0).
+The thread 0x3630 has exited with code 0 (0x0).
+The thread 0x2900 has exited with code 0 (0x0).
+The thread 0xe78 has exited with code 0 (0x0).
+The thread 0x3780 has exited with code 0 (0x0).
+The thread 0x3024 has exited with code 0 (0x0).
+The thread 0xc60 has exited with code 0 (0x0).
+The thread 0x1a64 has exited with code 0 (0x0).
+The thread 0x2d18 has exited with code 0 (0x0).
+The thread 0x20f8 has exited with code 0 (0x0).
+The thread 0x3490 has exited with code 0 (0x0).
+The thread 0x2c78 has exited with code 0 (0x0).
+The thread 0x324c has exited with code 0 (0x0).
+The thread 0x2674 has exited with code 0 (0x0).
+The thread 0x3318 has exited with code 0 (0x0).
+The thread 0x33f0 has exited with code 0 (0x0).
+The thread 0xc68 has exited with code 0 (0x0).
+The thread 0x378c has exited with code 0 (0x0).
+The thread 0x3514 has exited with code 0 (0x0).
+The thread 0x3458 has exited with code 0 (0x0).
+The thread 0x2e40 has exited with code 0 (0x0).
+The thread 0x1568 has exited with code 0 (0x0).
+The thread 0x5b0 has exited with code 0 (0x0).
+The thread 0x35ac has exited with code 0 (0x0).
+The thread 0x2934 has exited with code 0 (0x0).
+The thread 0x12d0 has exited with code 0 (0x0).
+The thread 0x339c has exited with code 0 (0x0).
+The thread 0x3068 has exited with code 0 (0x0).
+The thread 0xa50 has exited with code 0 (0x0).
+The thread 0x3748 has exited with code 0 (0x0).
+The thread 0x114c has exited with code 0 (0x0).
+The thread 0x3380 has exited with code 0 (0x0).
+The thread 0x1c48 has exited with code 0 (0x0).
+The thread 0x798 has exited with code 0 (0x0).
+The thread 0x2798 has exited with code 0 (0x0).
+The thread 0xcf4 has exited with code 0 (0x0).
+The thread 0x2720 has exited with code 0 (0x0).
+The thread 0x9f0 has exited with code 0 (0x0).
+The thread 0x3588 has exited with code 0 (0x0).
+The thread 0x33ec has exited with code 0 (0x0).
+The thread 0x2efc has exited with code 0 (0x0).
+The thread 0x35b8 has exited with code 0 (0x0).
+The thread 0x2648 has exited with code 0 (0x0).
+The thread 0x325c has exited with code 0 (0x0).
+The thread 0x1740 has exited with code 0 (0x0).
+The thread 0x5bc has exited with code 0 (0x0).
+The thread 0x37a4 has exited with code 0 (0x0).
+The thread 0x3740 has exited with code 0 (0x0).
+The thread 0x16a0 has exited with code 0 (0x0).
+The thread 0x329c has exited with code 0 (0x0).
+The thread 0x2598 has exited with code 0 (0x0).
+The thread 0x16b4 has exited with code 0 (0x0).
+The thread 0xc94 has exited with code 0 (0x0).
+The thread 0x31d0 has exited with code 0 (0x0).
+The thread 0xc90 has exited with code 0 (0x0).
+The thread 0x1538 has exited with code 0 (0x0).
+The thread 0x23a8 has exited with code 0 (0x0).
+The thread 0x20b8 has exited with code 0 (0x0).
+The thread 0x36bc has exited with code 0 (0x0).
+The thread 0x1e9c has exited with code 0 (0x0).
+The thread 0x2cc has exited with code 0 (0x0).
+The thread 0x2a6c has exited with code 0 (0x0).
+The thread 0x30a0 has exited with code 0 (0x0).
+The thread 0x2604 has exited with code 0 (0x0).
+The thread 0x30e0 has exited with code 0 (0x0).
+The thread 0x341c has exited with code 0 (0x0).
+The thread 0x166c has exited with code 0 (0x0).
+The thread 0x1290 has exited with code 0 (0x0).
+The thread 0xc68 has exited with code 0 (0x0).
+The thread 0x31d4 has exited with code 0 (0x0).
+The thread 0x1374 has exited with code 0 (0x0).
+The thread 0x9f4 has exited with code 0 (0x0).
+The thread 0x1388 has exited with code 0 (0x0).
+The thread 0x1690 has exited with code 0 (0x0).
+The thread 0x35c4 has exited with code 0 (0x0).
+The thread 0x2ba4 has exited with code 0 (0x0).
+The thread 0x3508 has exited with code 0 (0x0).
+The thread 0x1330 has exited with code 0 (0x0).
+The thread 0x1a34 has exited with code 0 (0x0).
+The thread 0x7c0 has exited with code 0 (0x0).
+The thread 0xcbc has exited with code 0 (0x0).
+The thread 0x9d0 has exited with code 0 (0x0).
+The thread 0x306c has exited with code 0 (0x0).
+The thread 0x16a8 has exited with code 0 (0x0).
+The thread 0x9ac has exited with code 0 (0x0).
+The thread 0x1100 has exited with code 0 (0x0).
+The thread 0x1c58 has exited with code 0 (0x0).
+The thread 0x1730 has exited with code 0 (0x0).
+The thread 0x1880 has exited with code 0 (0x0).
+The thread 0x1ea0 has exited with code 0 (0x0).
+The thread 0x3678 has exited with code 0 (0x0).
+The thread 0x350 has exited with code 0 (0x0).
+The thread 0x8 has exited with code 0 (0x0).
+The thread 0xe58 has exited with code 0 (0x0).
+The thread 0x25e8 has exited with code 0 (0x0).
+The thread 0x1df8 has exited with code 0 (0x0).
+The thread 0x1b38 has exited with code 0 (0x0).
+The thread 0x324 has exited with code 0 (0x0).
+The thread 0x1410 has exited with code 0 (0x0).
+The thread 0x1628 has exited with code 0 (0x0).
+The thread 0x1938 has exited with code 0 (0x0).
+The thread 0x3654 has exited with code 0 (0x0).
+The thread 0x758 has exited with code 0 (0x0).
+The thread 0x350 has exited with code 0 (0x0).
+The thread 0x35fc has exited with code 0 (0x0).
+The thread 0x30dc has exited with code 0 (0x0).
+The thread 0x365c has exited with code 0 (0x0).
+The thread 0x33a8 has exited with code 0 (0x0).
+The thread 0x3288 has exited with code 0 (0x0).
+The thread 0x3418 has exited with code 0 (0x0).
+The thread 0x3648 has exited with code 0 (0x0).
+The thread 0x351c has exited with code 0 (0x0).
+The thread 0x3388 has exited with code 0 (0x0).
+The thread 0x2278 has exited with code 0 (0x0).
+The thread 0x3678 has exited with code 0 (0x0).
+The thread 0x3714 has exited with code 0 (0x0).
+The thread 0x214c has exited with code 0 (0x0).
+The thread 0x37a0 has exited with code 0 (0x0).
+The thread 0x1c70 has exited with code 0 (0x0).
+The thread 0x19dc has exited with code 0 (0x0).
+The thread 0x6c8 has exited with code 0 (0x0).
+The thread 0x13e8 has exited with code 0 (0x0).
+The thread 0x1700 has exited with code 0 (0x0).
+The program '[3572] dotnet.exe' has exited with code -1 (0xffffffff).
+The program '[7484] QRCodeGenerator.exe' has exited with code 1073807364 (0x40010004).
