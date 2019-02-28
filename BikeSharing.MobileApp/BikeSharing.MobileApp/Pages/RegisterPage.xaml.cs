@@ -1,13 +1,17 @@
-﻿using Microsoft.WindowsAzure.Storage;
+﻿using BikeSharing.MobileApp.Models;
+using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using BikeSharing.Models;
@@ -17,14 +21,14 @@ namespace BikeSharing.MobileApp.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RegisterPage : ContentPage
 	{
-        bool isNewItem;
-        //public UserProfile item { get; set; } 
+        //bool isNewItem;
+        public UserProfile item { get; set; } 
 		public RegisterPage (bool isNew = false)
 		{
-            //item = new UserProfile();
+            item = new UserProfile();
 			InitializeComponent ();
-            isNewItem = isNew;
-            //BindingContext = item;
+            //isNewItem = isNew;
+            BindingContext = item;
         }
 
         private MediaFile _mediaFile;
@@ -32,11 +36,12 @@ namespace BikeSharing.MobileApp.Pages
 
         private async void Save_Clicked(object sender, EventArgs e)
         {
-                var todoItem = (UserProfile)BindingContext;
-                await App.TodoManager.SaveTaskAsync(todoItem, isNewItem);
-                await Navigation.PushModalAsync(new TabbedMenu());
-                //MessagingCenter.Send<UserProfile>(this.item, "newitem");
-                //await Navigation.PushModalAsync(new TabbedMenu());
+            //var todoItem = (UserProfile)BindingContext;
+            //await App.TodoManager.SaveTaskAsync(todoItem, isNewItem);
+            MessagingCenter.Send<UserProfile>(this.item, "newitem");
+            await DisplayAlert("Saved", item + "Successfully!", "OK");
+            await Navigation.PushModalAsync(new TabbedMenu());
+            //await Navigation.PushModalAsync(new TabbedMenu());
         }
 
         private async void btnSelectPic_Clicked(object sender, EventArgs e)

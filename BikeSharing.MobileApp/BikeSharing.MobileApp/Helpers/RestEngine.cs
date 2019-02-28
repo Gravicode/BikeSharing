@@ -58,7 +58,7 @@ namespace BikeSharing.MobileApp.Helpers
 
         public async Task<bool> InsertData(T item)
         {
-            var uri = new Uri(Prefix);
+            var uri = new Uri("https://bikesharingservices.azurewebsites.net/api/PostUserProfile");
             var Json = JsonConvert.SerializeObject(item);
             var ItemContent = new StringContent(Json, Encoding.UTF8, "application/json");
             var res = await client.PostAsync(uri, ItemContent);

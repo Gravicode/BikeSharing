@@ -1,6 +1,11 @@
 ﻿using BikeSharing.MobileApp.Helpers;
+using BikeSharing.MobileApp.Models;
 using BikeSharing.MobileApp.Pages;
+using BikeSharing.Models;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,7 +14,7 @@ namespace BikeSharing.MobileApp
 {
     public partial class App : Application
     {
-        public static TodoItemManager TodoManager { get; private set; }
+        //public static TodoItemManager TodoManager { get; private set; }
         public static double ScreenHeight;
         public static double ScreenWidth;
         //public static bool IsUserLoggedIn { get; set; }
@@ -23,11 +28,12 @@ namespace BikeSharing.MobileApp
             //{
             //    MainPage = new BikeSharing.MobileApp.MainPage();
             //}
-            //InitializeComponent();
+            InitializeComponent();
             //MainPage = new StartPage();
             //MainPage = new NavigationPage(new StartPage() { Title = "BIKE SHARING SAMPLE 0.1" });
-            TodoManager = new TodoItemManager(new RestService());
-            MainPage = new TabbedMenu();
+            DependencyService.Register<RestEngine<UserProfile>>();
+            //TodoManager = new TodoItemManager(new RestService());
+            MainPage = new RegisterPage();
         }
 
         protected override void OnStart()

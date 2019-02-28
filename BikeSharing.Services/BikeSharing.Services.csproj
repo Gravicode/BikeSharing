@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BikeSharing.MobileApp\BikeSharing.MobileApp\BikeSharing.MobileApp.csproj" />
     <ProjectReference Include="..\BikeSharing.Models\BikeSharing.Models.csproj" />
     <ProjectReference Include="..\BikeSharing.Tools\BikeSharing.Tools.csproj" />
   </ItemGroup>

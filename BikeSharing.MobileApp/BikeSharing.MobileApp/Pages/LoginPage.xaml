@@ -5,8 +5,8 @@
              Title="Login" WidthRequest="20" BackgroundColor="White">
     <StackLayout Spacing="20" Padding="40" VerticalOptions="Center">
         <Image Source="bgloginbike.jpg" />
-        <Entry Placeholder="Username" PlaceholderColor="Black"  TextColor="Black"></Entry>
-        <Entry Placeholder="Password" PlaceholderColor="Black" TextColor="Black" IsPassword="True"></Entry>
+        <Entry x:Name="EntryUsername" Placeholder="Username" PlaceholderColor="Black"  TextColor="Black"></Entry>
+        <Entry x:Name="EntryPassword" Placeholder="Password" PlaceholderColor="Black" TextColor="Black" IsPassword="True"></Entry>
         <Button x:Name="btnLogin" Text="Log In" TextColor="White" BorderRadius="20" BackgroundColor="#748e59"></Button>
     </StackLayout>
 </ContentPage>

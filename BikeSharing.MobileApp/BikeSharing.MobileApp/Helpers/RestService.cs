@@ -18,12 +18,12 @@ namespace BikeSharing.MobileApp.Helpers
 
         public RestService()
         {
-            var authData = string.Format("{0}:{1}", Constants.Username, Constants.Password);
-            var authHeaderValue = Convert.ToBase64String(Encoding.UTF8.GetBytes(authData));
+            //var authData = string.Format("{0}:{1}", Constants.Username, Constants.Password);
+            //var authHeaderValue = Convert.ToBase64String(Encoding.UTF8.GetBytes(authData));
 
             client = new HttpClient();
             client.MaxResponseContentBufferSize = 256000;
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", authHeaderValue);
+            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", authHeaderValue);
         }
 
         public async Task<List<UserProfile>> RefreshDataAsync()
@@ -52,35 +52,28 @@ namespace BikeSharing.MobileApp.Helpers
 
         public async Task SaveTodoItemAsync(UserProfile item, bool isNewItem = false)
         {
-            var RestUrl = "https://bikesharingservices.azurewebsites.net/api/UserProfile/PostUserProfile";
-            var uri = new Uri(string.Format(RestUrl, string.Empty));
+            //var RestUrl = "https://bikesharingservices.azurewebsites.net/api/UserProfile/PostUserProfile";
+            var uri = new Uri(string.Format(Constants.RestUrl, string.Empty));
 
-            try
+            var json = JsonConvert.SerializeObject(item);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = null;
+            if (isNewItem)
             {
-                var json = JsonConvert.SerializeObject(item);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                HttpResponseMessage response = null;
-                if (isNewItem)
-                {
-                    response = await client.PostAsync(uri, content);
-                }
-                else
-                {
-                    response = await client.PutAsync(uri, content);
-                }
-
-                if (response.IsSuccessStatusCode)
-                {
-                    Debug.WriteLine(@"TodoItem successfully saved.");
-                }
-
+                response = await client.PostAsync(uri, content);
             }
-            catch (Exception ex)
+            else
             {
-                Debug.WriteLine(@"ERROR {0}", ex.Message);
+                response = await client.PutAsync(uri, content);
+            }
+
+            if (response.IsSuccessStatusCode)
+            {
+                Debug.WriteLine(@"				TodoItem successfully saved.");
             }
         }
+        
 
         public async Task DeleteTodoItemAsync(string id)
         {

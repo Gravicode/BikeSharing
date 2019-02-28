@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BikeSharing.Models;
 using BikeSharing.Service.Helpers;
+using BikeSharing.MobileApp.Models;
 
 namespace BikeSharing.Service.Controllers
 {
@@ -33,6 +34,43 @@ namespace BikeSharing.Service.Controllers
             try
             {
                 hasil.Data = _context.UserProfiles.ToList();
+            }
+            catch (Exception ex)
+            {
+                hasil.IsSucceed = false;
+                hasil.ErrorMessage = ex.Message;
+            }
+            return Ok(hasil);
+
+        }
+
+        [HttpGet("username={username}/password={password}")]
+        public async Task<IActionResult> UserDetailsLogin([FromRoute]string username, string password)
+        {
+
+            var hasil = new OutputData() { IsSucceed = true };
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    hasil.IsSucceed = false;
+                    hasil.ErrorMessage = "state is not valid";
+                }
+                else
+                {
+
+                    var userprofile = await _context.UserProfiles.Where(x => x.UserName == username && x.Password == password).SingleOrDefaultAsync();
+
+                    if (userprofile == null)
+                    {
+                        hasil.IsSucceed = false;
+                        hasil.ErrorMessage = "not found";
+                    }
+                    else
+                    {
+                        hasil.Data = userprofile;
+                    }
+                }
             }
             catch (Exception ex)
             {
