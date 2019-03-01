@@ -13,9 +13,9 @@ namespace BikeSharing.MobileApp.ServicesHandler
         RestClient<UserProfile> _restClient = new RestClient<UserProfile>();
 
         // Boolean function with the following parameters of username & password.
-        public async Task<bool> CheckLoginIfExists(string username, string password)
+        public async Task<bool> CheckLoginIfExists(string Username, string Password)
         {
-            var check = await _restClient.checkLogin(username, password);
+            var check = await _restClient.checkLogin(Username, Password);
 
             return check;
         }

@@ -22,6 +22,7 @@
     <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
     <PackageReference Include="Xam.Plugin.SimpleAppIntro" Version="1.0.17" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="3.4.0.1008975" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
@@ -71,10 +72,5 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ServicesHandler\" />
-    <Folder Include="RestAPIClient\" />
   </ItemGroup>
 </Project>

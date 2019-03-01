@@ -31,9 +31,9 @@ namespace BikeSharing.MobileApp
             InitializeComponent();
             //MainPage = new StartPage();
             //MainPage = new NavigationPage(new StartPage() { Title = "BIKE SHARING SAMPLE 0.1" });
-            DependencyService.Register<RestEngine<UserProfile>>();
+            //DependencyService.Register<RestEngine<UserProfile>>();
             //TodoManager = new TodoItemManager(new RestService());
-            MainPage = new RegisterPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

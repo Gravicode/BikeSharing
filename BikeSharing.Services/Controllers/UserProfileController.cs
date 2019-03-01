@@ -48,36 +48,35 @@ namespace BikeSharing.Service.Controllers
         public async Task<IActionResult> UserDetailsLogin([FromRoute]string username, string password)
         {
 
-            var hasil = new OutputData() { IsSucceed = true };
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    hasil.IsSucceed = false;
-                    hasil.ErrorMessage = "state is not valid";
-                }
-                else
-                {
-
+            //var hasil = new OutputData() { IsSucceed = true };
+            //try
+            //{
+            //    if (!ModelState.IsValid)
+            //    {
+            //        hasil.IsSucceed = false;
+            //        hasil.ErrorMessage = "state is not valid";
+            //    }
+            //    else
+            //    {
                     var userprofile = await _context.UserProfiles.Where(x => x.UserName == username && x.Password == password).SingleOrDefaultAsync();
-
                     if (userprofile == null)
                     {
-                        hasil.IsSucceed = false;
-                        hasil.ErrorMessage = "not found";
+                return NotFound();
+                        //hasil.IsSucceed = false;
+                        //hasil.ErrorMessage = "not found";
                     }
-                    else
-                    {
-                        hasil.Data = userprofile;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                hasil.IsSucceed = false;
-                hasil.ErrorMessage = ex.Message;
-            }
-            return Ok(hasil);
+                    //else
+                    //{
+                        //hasil.Data = userprofile;
+                    //}
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    hasil.IsSucceed = false;
+            //    hasil.ErrorMessage = ex.Message;
+            //}
+            return Ok(userprofile);
 
         }
 

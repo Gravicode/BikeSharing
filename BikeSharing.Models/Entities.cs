@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -110,12 +111,19 @@ namespace BikeSharing.Models
     public class UserProfile:AuditAttribute
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [JsonProperty("id")]
         public long Id { get; set; }
+        [JsonProperty("username")]
         public string UserName { get; set; }
+        [JsonProperty("password")]
         public string Password { set; get; }
+        [JsonProperty("email")]
         public string Email { get; set; }
+        [JsonProperty("phonenumber")]
         public string PhoneNumber { get; set; }
+        [JsonProperty("profilepictureurl")]
         public string ProfilePictureUrl { get; set; }
+        [JsonProperty("isactive")]
         public bool IsActive { get; set; }
     }
 
