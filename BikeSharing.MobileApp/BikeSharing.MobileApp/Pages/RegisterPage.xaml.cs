@@ -17,16 +17,15 @@ using Xamarin.Forms.Xaml;
 using BikeSharing.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
+using BikeSharing.MobileApp.ServicesHandler;
 
 namespace BikeSharing.MobileApp.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class RegisterPage : ContentPage
 	{
-        //bool isNewItem;
-        String uname, pass,email,phonenumber;
         public UserProfile item { get; set; } 
-		public RegisterPage (bool isNew = false)
+		public RegisterPage ()
 		{
             item = new UserProfile();
 			InitializeComponent ();
@@ -34,35 +33,25 @@ namespace BikeSharing.MobileApp.Pages
             BindingContext = item;
         }
 
-        private MediaFile _mediaFile;
-        private string URL { get; set; }
-
         private async void Save_Clicked(object sender, EventArgs e)
         {
-            uname = usernameEntry.Text;
-            pass = passwordEntry.Text;
-            email = emailEntry.Text;
-            phonenumber = phonenumberEntry.Text;
+            //var item = (UserProfile)BindingContext;
+            LoginService services = new LoginService();
+            var saveUP = await services.CheckSaveUserProfile(this.item);
 
-            if (uname == null)
+            if (saveUP)
             {
-                DisplayAlert("Alert", "Please Enter Username", "Ok");
-            }
-            else if (pass == null)
-            {
-                DisplayAlert("Alert", "Please Enter Password", "Ok");
+                await DisplayAlert("Register success", "You are Registered", "Okay");
+                await Navigation.PushModalAsync(new LoginPage());
             }
             else
             {
-                LoginAsync();
+                await DisplayAlert("Register failed", "Your Data is incorrect", "Okay");
             }
-            //var todoItem = (UserProfile)BindingContext;
-            //await App.TodoManager.SaveTaskAsync(todoItem, isNewItem);
-            //MessagingCenter.Send<UserProfile>(this.item, "newitem");
-            //await DisplayAlert("Saved", item + "Successfully!", "OK");
-            //await Navigation.PushModalAsync(new TabbedMenu());
-            //await Navigation.PushModalAsync(new TabbedMenu());
         }
+
+        private MediaFile _mediaFile;
+        private string URL { get; set; }
 
         private async void btnSelectPic_Clicked(object sender, EventArgs e)
         {
@@ -146,52 +135,5 @@ namespace BikeSharing.MobileApp.Pages
             //btnTakePic.IsEnabled = true;
             btnUpload.IsEnabled = true;
         }
-
-        public async void LoginAsync()
-        {
-            try
-            {
-                var fromContent = new FormUrlEncodedContent(new[] {
-                        new KeyValuePair<string,string>("username", uname),
-                        new KeyValuePair<string,string>("password", pass),
-                        new KeyValuePair<string,string>("email", email),
-                        new KeyValuePair<string,string>("phonenumber", phonenumber)
-                    });
-
-                var myHttpClient = new HttpClient();
-                var response = await myHttpClient.PostAsync
-                    ("https://bikesharingservices.azurewebsites.net/api/userprofile/PostUserProfile", fromContent);
-
-                var json = await response.Content.ReadAsStringAsync();
-                try
-                {
-                    var data = JsonConvert.DeserializeObject<Data>(json);
-                    if (data.ResponseCode.Equals("1"))
-                    {
-                        await Navigation.PushModalAsync(new UserProfilePage());
-                    }
-                    else
-                    {
-                        await DisplayAlert("Alert", data.Message, "Ok");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    await DisplayAlert("Alert", ex.Message, "Ok");
-                }
-            }
-            catch (Exception e)
-            {
-                await DisplayAlert("Alert", e.Message, "Ok");
-            }
-        }
-
-        public class Data
-        {
-            public string ResponseCode { get; set; }
-            public string Message { get; set; }
-            public string UserId { get; set; }
-        }
-
     }
 }

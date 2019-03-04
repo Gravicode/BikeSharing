@@ -15,7 +15,7 @@ namespace BikeSharing.MobileApp.Pages
         {
             masterPage = new MasterPage();
             Master = masterPage;
-            Detail = new NavigationPage(new UserProfilePage());
+            Detail = new NavigationPage(new StartPage());
 
             masterPage.ListView.ItemSelected += OnItemSelected;
 

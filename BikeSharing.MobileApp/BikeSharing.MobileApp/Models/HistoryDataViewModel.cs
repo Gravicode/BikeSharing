@@ -29,7 +29,7 @@ namespace BikeSharing.MobileApp.Models
                 {
                     Title = i + "KM",
                     Owner = "BikeSharing" + i,
-                    AlertColor = i % 2 == 0 ? Color.ForestGreen : Color.ForestGreen,
+                    AlertColor = i % 2 == 0 ? Color.DodgerBlue : Color.DodgerBlue,
                 };
                 HistoryDataCollection.Add(cardData);
             }

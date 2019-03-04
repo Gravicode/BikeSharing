@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using BikeSharing.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -22,6 +23,20 @@ namespace BikeSharing.MobileApp.RestAPIClient
             var response = await httpClient.GetAsync(LoginWebServiceUrl + "username=" + Username + "/" + "password=" + Password);
            
             return response.IsSuccessStatusCode; // return either true or false
+        }
+
+        public async Task<bool> InsertData(UserProfile item)
+        {
+            var httpClient = new HttpClient();
+            var uri = new Uri("https://bikesharingservices.azurewebsites.net/api/UserProfile/PostUserProfile");
+            var Json = JsonConvert.SerializeObject(item);
+            var ItemContent = new StringContent(Json, Encoding.UTF8, "application/json");
+            var res = await httpClient.PostAsync(uri, ItemContent);
+            if (res.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -7,18 +7,18 @@
         <ScrollView>
             <StackLayout>
                 <StackLayout>
-                    <Grid Padding="0,0,0,-80">
-                        <Image Grid.Column="0" Grid.Row="0" Source="bgprofile.jpg" VerticalOptions="Start" HorizontalOptions="Center" />
-                        <controls:CircleImage Grid.Column="0" Grid.Row="0" Source="aldo.jpg" VerticalOptions="End" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" BorderThickness="3" BorderColor="White" Aspect="AspectFill" Margin="0,-50,0,60"/>
+                    <Grid Padding="0,0,0,-100">
+                        <Image Grid.Column="0" Grid.Row="0" Source="bgup.png" VerticalOptions="Start" HorizontalOptions="Center" />
+                        <controls:CircleImage Grid.Column="0" Grid.Row="0" Source="pp.png" VerticalOptions="End" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100" BorderThickness="3" BorderColor="White" Aspect="AspectFill" Margin="0,-50,0,100"/>
                     </Grid>
                 </StackLayout>
-                <StackLayout Spacing="20" Padding="30" VerticalOptions="Center">
-                    <Label Text="Nurhadi Aldo" HorizontalOptions="Center" FontSize="25" TextColor="#748e59" FontAttributes="Bold" ></Label>
+                <StackLayout Spacing="15" Padding="30" VerticalOptions="Center">
+                    <Label Text="Alkaren Ichsan" HorizontalOptions="Center" FontSize="25" TextColor="#3499EC" FontAttributes="Bold" ></Label>
                     <Entry Placeholder="Full Name"></Entry>
                     <Entry Placeholder="Username"></Entry>
                     <Entry Placeholder="Password" IsPassword="True"></Entry>
                     <Entry Placeholder="Email"></Entry>
-                    <Button Text="edit" BorderRadius="20" TextColor="White" BackgroundColor="#748e59"></Button>
+                    <Button Text="edit" BorderRadius="20" TextColor="White" BackgroundColor="#3499EC"></Button>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

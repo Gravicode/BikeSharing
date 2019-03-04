@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BikeSharing.MobileApp.Pages.LoginPage"
-             Title="Login" WidthRequest="20" BackgroundColor="White">
+             Title="Login" WidthRequest="20" BackgroundColor="White"
+             BackgroundImage="BgAndroid.png">
     <StackLayout Spacing="20" Padding="40" VerticalOptions="Center">
-        <Image Source="bgloginbike.jpg" />
-        <Entry x:Name="EntryUsername" Placeholder="Username" PlaceholderColor="Black"  TextColor="Black"></Entry>
-        <Entry x:Name="EntryPassword" Placeholder="Password" PlaceholderColor="Black" TextColor="Black" IsPassword="True"></Entry>
-        <Button x:Name="btnLogin" Text="Log In" TextColor="White" BorderRadius="20" BackgroundColor="#748e59"></Button>
+        <!--<Image Source="bgloginbike.jpg" />-->
+        <Label HorizontalTextAlignment="Center" Text="Welcome&#x0a;To&#x0a;BikeSharing" TextColor="White" FontSize="45" HorizontalOptions="Center" FontAttributes="None" />
+        <Entry Margin="0,70,0,0" x:Name="EntryUsername" Placeholder="Username" PlaceholderColor="White"  TextColor="White"></Entry>
+        <Entry x:Name="EntryPassword" Placeholder="Password" PlaceholderColor="White" TextColor="White" IsPassword="True"></Entry>
+        <Button x:Name="btnLogin" Text="Log In" TextColor="White" BorderRadius="20" BackgroundColor="#3499EC"></Button>
     </StackLayout>
 </ContentPage>

@@ -19,5 +19,11 @@ namespace BikeSharing.MobileApp.ServicesHandler
 
             return check;
         }
+
+        public async Task<bool> CheckSaveUserProfile(UserProfile item)
+        {
+            var check = await _restClient.InsertData(item);
+            return check;
+        }
     }
 }

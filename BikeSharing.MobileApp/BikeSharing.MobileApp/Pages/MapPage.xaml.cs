@@ -259,8 +259,7 @@ namespace BikeSharing.MobileApp.Pages
                 };
                 btnSos.Clicked += btnSos_Clicked;
                 async void btnSos_Clicked(object sender, EventArgs e)
-                {
-
+                {   
                     var action = await DisplayActionSheet("Apa ada masalah?", null, "Cancel", "Sepeda Rusak", "Sepeda Tidak Bisa Terkunci");
                     Debug.WriteLine("Action: " + action, "Location: " + station1.Latitude.ToString());
                     //var act = new SoSReport() { DeviceName = DeviceName, Message = "" };

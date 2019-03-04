@@ -11,7 +11,7 @@ namespace BikeSharing.MobileApp.Pages
         public TabbedMenu()
         {
             showboarding();
-            this.BarBackgroundColor = Color.FromHex("#748e59");
+            this.BarBackgroundColor = Color.FromHex("#3499EC");
             this.BarTextColor = Color.White;
             //var navigationPage = new NavigationPage(new LoginPage());
             //navigationPage.Icon = "schedule.png";
